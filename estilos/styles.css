@@ -1,0 +1,454 @@
+/*PAGINA HOME DEL SITIO.*/
+
+body{
+    background-color: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.logohome{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*
+.gradient{
+    background-image: 
+        linear-gradient(90deg, red blue);
+        CLIP PASA EL FONDO AL TEXTO, LUEGO COLOR 
+        DEL TEXTO TAPA EL FONDO, SO COLOR TXT TRANSPARENT
+    background-clip: text;
+    color: transparent;
+}
+*/
+
+
+.pelipop{
+    margin-top: 0px;
+    display: flex;
+    flex-direction:  row;
+    height: 270px;  
+}
+
+.detallepeli{
+    list-style: none;
+    margin-right: 5px;
+}
+/* rgb(107, 107, 5) original
+   rgb(51, 5, 136)  azul
+   rgb(59, 34, 104) violetaosc
+   ...,,,,
+   text-align: center;
+    width: 380px;
+    border: rgb(59, 34, 104) 1px solid;
+    display: flex;
+    align-items: center;
+*/
+.peliculas{
+    text-align: center;
+    width: 380px;
+    
+    display: flex;
+    align-items: center;
+    
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: black;
+    color: #ff0066;
+    border:2px solid #ff0066;
+    box-shadow: 0px 0px 10px 2px #ff0066;
+    text-transform: uppercase;
+    outline: none;
+    justify-content: space-around;
+   
+
+}
+
+h1{
+    color: rgb(155, 155, 155);
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.peliculas ul{
+    text-align: center;
+}
+
+.tituloname{
+    color: white;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+.fechapeli{
+    color: rgb(139, 136, 136);
+    font-size: small;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+}
+
+
+
+/*DETAIL-MOVIE*/
+
+.detailpeli{
+    display: flex;
+    flex-direction: column;
+    /*margin-left: 579px;*/
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.favbot{
+    color: rgb(197, 197, 197);
+    font-size: small;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    height: 20px;
+    width: 100px;
+    background-color: transparent;
+    margin-left: 50px;
+}
+.portadapeli{
+    margin-left: 10px;
+}
+
+.sinopsis{
+    color: rgb(139, 136, 136);
+    font-size: small;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+}
+
+.generos{
+    color: rgb(139, 136, 136);
+    font-size: small;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.nombrecolumna{
+    margin-top: 30px;
+}
+
+/*FOOTER*/
+
+footer{
+    color: white;
+    border: 1px rgb(107, 107, 5) solid;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+.futer{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.futer h2{
+    font-size: 20pxs;
+}
+
+.futer span{
+    margin-right: 10px;
+}
+
+/*FOOTER DETAIL-MOVIE*/
+
+
+footer{
+    color: white;
+    border: 1px rgb(59, 34, 104) solid;
+    border-radius: 25px;
+    margin-top: 50px;
+    width: 500px;
+    margin-left: 518px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.futermovie{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.futermovie h2{
+    font-size: 20pxs;
+}
+
+.futermovie span{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+/*DETAIL PELIS+VALORADAS*/
+
+
+
+/* 
+      COMENTARIOS 
+
+    TENGO QUE ORDENAR LOS CLASS. (SINOPSIS, GENERO, ETC)
+    BUSCAR RELLENAR LA PAGINA. (IMG FONDO ETC)
+
+
+
+*/
+
+/*SECCION DE DECORADO DE UNDERLINE EN EL HOME APLICADO RESTO DE LINKS DE LA PAGINAS.*/
+.saltopagina{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(104, 104, 104);
+    width: 200px;
+}
+.saltopagina{
+    background-image: linear-gradient(red, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+   text-align: center;
+   font-size: 24px;
+}
+
+.saltopagina:hover{
+    background-size: 100% 3px;
+}
+
+/*SALTO DE PAGINA EFECTO DESDE back home*/
+.saltopagina1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(104, 104, 104);
+    width: 200px;
+}
+.saltopagina1{
+    background-image: linear-gradient(red, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: background-size 300ms ease;
+   text-align: center;
+   font-size: 24px;
+}
+
+.saltopagina1:hover{
+    background-size: 100% 3px;
+}
+
+
+/*////////////////*DETAIL-MOVIE SALTO PAGINA./////////////*/
+
+h3{
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+}
+
+.botonpopulares{
+    display: flex;
+    justify-content: left;
+    margin-top: 140px;
+}
+
+
+/*BOTON DE GO TO TOP*/
+
+.gotop{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: black;
+    color: #ff0066;
+    border:5px solid #ff0066;
+    box-shadow: 0px 0px 40px 2px #ff0066;
+    text-transform: uppercase;
+    outline: none;
+    
+}
+
+
+
+/*COMPORTAMIENTO DEL SCROLL HTML*/
+
+html .saltopagina{
+    scroll-behavior: smooth;
+}
+
+
+/*DETAIL SERIES-POPULARES*/
+
+.nombrepagina{
+    text-align: center;
+    font-size: 25px;
+}
+
+.watchme{
+    text-align: center;
+}
+
+/*APARTADO DE BUSQUEDA*/
+
+.iput{
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #7403be;
+    height: 10px;
+}
+.iput::placeholder{
+    color: #666666
+}
+.hola{
+    text-align: right;
+    margin-right: 25px;
+}
+
+/*APARTADO DE DROPDOWN*/
+
+.dropdown{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dropbtn{
+    background-color: rgb(179, 179, 179);
+    color: #666666;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 10px 20px 0.2px rgb(92, 0, 153, 0.1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.drop-content{
+    display: none;
+    background-color: #aca9a9;
+    margin-top: 8px;
+    border-radius: 15px;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0.2px rgb(92, 0, 153, 0.1);
+    padding: 10px 0px;
+}
+
+.drop-content a{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: #2e004d;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.drop-content a:hover{
+    background-color: #d699ff;
+    color: white;
+}
+
+.dropdown:hover .drop-content{
+    display: flex;
+}
+
+/*/////////////////////////////////////////////////////////*/
+
+.homebtn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*///////////////////COMENTARIOS//////////////////////////*/
+
+
+/*VOY A TENER QUE SABER RECITAR LAS SIGUIENTES LINEAS;
+    .DROPDOWN , .DROPBTN , .DROP-CONTENT 
+             LINEA 267 HASTA 316 
+
+*/
+
+/*VOY A TENER QUE SABER RECITAR LAS SIGUIENTES LINEAS;
+    .IPUT , .IPUT::placeholder , .HOLA
+         LINEA 249 HASTA 263
+*/
+
+/*
+
+ESTILOS METODO DE BUSQUEDA 1:
+
+.container{
+    display: flex;
+    margin: 50px;
+}
+.container img{
+    width: 70px;
+    padding: 40px;
+    background-color: #040404;
+    border-radius: 40px;
+}
+.search{
+    width: 250px;
+    height: 100px;
+    display: flex;
+}
+.search input{
+    height: 98px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 20px;
+}
+
+.search img{
+    width: 20px;
+    height: 10px;
+    padding: 40px;
+    background-color: #f2f2f2;
+    margin: 0px;
+    border-radius: 40px 0px 0px 40px;
+}
+///////////////////////////////////////////////////////////
+*/
+
+/*
+
+METODO DE BUSQUEDA 1:
+
+<!--
+<div class="container">
+   <div class="search">
+       <img src="./elementos/91-919100_search-prism-learning-solutions-search-icon-svg-free.png" alt="lupita">
+       <input type="text" placeholder="Search something...">                
+   </div>
+</div>
+-->
+/////////////////////////////////////////////////////////////
+*/
