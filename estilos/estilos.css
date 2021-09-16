@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background: black;
+    
+}
+
+
+/*HEADER*/
+
+.head{
+    max-width: 90%;
+    margin-right: 10%;
+    /*background-color: rgb(155, 0, 155, 0.6);*/
+    background: linear-gradient(rgb(88, 28, 226), rgb(3, 44, 105));   
+     margin-right: 4%;
+    display: flex;
+    justify-content: right;
+    margin-left: 10%;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid rgb(2, 158, 145);
+    
+}
+.head img{
+    height: 175px;
+    margin-left: 10%;
+}
+
+/*SIMBOLOS DE REDES*/
+
+.redes li{
+    list-style: none;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+/*BUSQUEDA*/
+
+.busqueda{
+    margin: 8px 5px 0 0;
+}
+
+/*NAV BAR DIF ACCESOS*/
+
+.menu{
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 25px;
+
+}
+
+.menu nav{
+    margin-top: 2%;
+    margin-right: 10px;
+    color: blanchedalmond;
+}
+
+/*ESTO EN EL SECTOR DE DEV TOOLS, BUSQUE COMO SE VEIA EL ESTILO DE ETIQ "a" PARA VER XQ NO SE SACABA EL SUB*/
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu span{
+    font-family: "Popins", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(rgb(88, 28, 226), rgb(3, 44, 105));
+    margin-right: 4%;
+    width: 10%;
+}
+
+
+/*ESTO TENGO QUE MODIFICAR PARA HACERLO RESPONSIVE*/
+/*TITULOS DE PELICULAS*/
+
+.titulos{
+    color: white;
+    font-family: "Popins", sans-serif;
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+/*CONTENEDOR DE PELICULAS*/
+
+.peliculas{
+    color: white;
+    text-align: center;
+    margin-right: 2%;
+    font-family: "Popins", sans-serif;
+    background: rgb(126, 171, 255, 0.2);
+}
+
+/*FECHA DE PELI Y TITULO DE LA MISMA*/
+.peliculas img{
+    height: 275px;
+    width: 200px;
+}
+.fechaPeli{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(141, 141, 141);
+}
+.peliculas p{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+
+.contenedorPrin{
+    margin: 5% 5% 2% 14%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+}
+
+/*FOOTER*/
+.futer{
+    color:darkgray;
+    text-align: center;
+    margin-top: 5%;
+}
+.integrantes{
+    font-size: 18px;
+    font-family: 'Popins', sans-serif;
+}
+.integrantes ul{
+    font-size: 15px;
+    list-style: none;
+}
+
+/*INTENTO DE HACER RESPONSIVE*/
+/*HABLARLE A SEBI Y PEDIRLE AYUDA CON HACERLO RESPONSIVE*/
+
+
+/*DETAIL-MOVIE*/
+
+/*HEADER*/
+.headDetail div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headDetail img{
+    height: 175px;
+}
+
+.backHome{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Popins' sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*SECCION DE PELI*/
+
+.detailPeli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.Nombre{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Popins' sans-serif;
+    margin-bottom: 20px;
+}
+.contenedorPeli{
+    color: white;
+    text-align: center;
+    font-family: "Popins", sans-serif;
+    background: rgb(126, 171, 255, 0.2);
+    margin-bottom: 3%;
+    width: 470px;
+    border-radius: 10px;
+}
+.contenedorPeli img{
+    height: 275px;
+    width: 200px;
+    margin: 8px 0 0 0;
+}
+
+.contenedorPeli ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+.contenedorPeli ul li{
+    margin: 2%;
+}
+
+.favbot{
+   text-align: right;
+    margin-top: 10px;
+}
