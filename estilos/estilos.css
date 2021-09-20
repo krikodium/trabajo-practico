@@ -4,14 +4,14 @@
 }
 body{
     background: black;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 
 /*HEADER*/
 
 .head{
-    max-width: 90%;
+    
     margin-right: 10%;
     /*background-color: rgb(155, 0, 155, 0.6);*/
     background: linear-gradient(rgb(88, 28, 226), rgb(3, 44, 105));   
@@ -26,7 +26,7 @@ body{
 }
 .head img{
     height: 175px;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 /*SIMBOLOS DE REDES*/
@@ -139,6 +139,7 @@ a:-webkit-any-link {
 
 
 /*DETAIL-MOVIE*/
+/*DETAIL-MOVIE Y DETAIL-POPULARES*/
 
 /*HEADER*/
 .headDetail div{
@@ -204,4 +205,48 @@ a:-webkit-any-link {
 .favbot{
    text-align: right;
     margin-top: 10px;
+}
+
+/*SINOPSIS DE PELICULAS*/
+/*RESPONSIVE*/
+@media(max-width: 768px){
+    /*TABLET*/
+    .menu nav{
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+        text-align: center;
+    }
+     h1 .titulos {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .peliculas{
+        font-size: 5px;
+        height: 270px;
+        width: 155px;
+        margin: 0px 15px 100px 0;
+        background: rgb(126, 171, 255, 0.2);
+        
+    }
+    .peliculas img{
+        height: 150px;
+        width: 100px;
+    }
+    .titulos{
+        margin: 100px;
+    }
+    .futer{
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 425px){
+    .head{
+        max-width: 100%;
+    }
+    .busqueda{
+        text-align: center;
+    }
 }
