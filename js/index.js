@@ -1,5 +1,5 @@
-//?api_key=2a3e604f846a8507e6e6c47dd35eb5d5
-//?api_key=eff71d911bc68b6cdf67ad2d02630320
+//?api_key=2a3e604f846a8507e6e6c47dd35eb5d5 vieja 
+//?api_key=eff71d911bc68b6cdf67ad2d02630320 nueva
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 //PELICULAS POPULARES
@@ -19,12 +19,13 @@ fetch(url_populares)
             peliculasPop +=
                 `
                     <div class="peliculas">
-                        <a href="detail-movie.html"><img src= "${IMG_URL+pelisPop[i].poster_path}" alt="${pelisPop[i].title}"></a>
+                        <a href="detail-movie.html?id=${pelisPop[i].id}"><img src= "${IMG_URL+pelisPop[i].poster_path}" alt="${pelisPop[i].title}"></a>
                         <p>${pelisPop[i].title}</p>
                         <p class="fechaPeli">${pelisPop[i].release_date}</p>
                     </div>
                 `
         }
+
         contenedor.innerHTML = peliculasPop;
     })
     .catch(function (error) {
@@ -49,7 +50,7 @@ fetch(url_series)
             peliculasPop +=
                 `
                     <div class="peliculas">
-                        <a href="detail-movie.html"><img src= "${IMG_URL+pelisPop[i].poster_path}" alt="${pelisPop[i].title}"></a>
+                        <a href="detail-populares.html?id=${pelisPop[i].id}"><img src= "${IMG_URL+pelisPop[i].poster_path}" alt="${pelisPop[i].title}"></a>
                         <p>${pelisPop[i].name}</p>
                         <p class="fechaPeli">${pelisPop[i].first_air_date}</p>
                     </div>
@@ -79,7 +80,7 @@ fetch(url_rated)
             peliculasPop +=
                 `
                     <div class="peliculas">
-                        <a href="detail-movie.html"><img src= "${IMG_URL+pelisPop[i].poster_path}" alt="${pelisPop[i].title}"></a>
+                        <a href="detail-movie.html?id=${pelisPop[i].id}"><img src= "${IMG_URL+pelisPop[i].poster_path}" alt="${pelisPop[i].title}"></a>
                         <p>${pelisPop[i].title}</p>
                         <p class="fechaPeli">${pelisPop[i].release_date}</p>
                     </div>

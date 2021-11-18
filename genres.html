@@ -14,50 +14,56 @@
 
 <body>
     <header class="head">
-        <ul class="redes">
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-facebook"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-        </ul>
-        <img class="logo" src="./elementos/logoweb.jpg">
-
-        <ul class="redes1">
-            <li><i class="fas fa-home"></i></i></li>
-            <li><i class="fas fa-heart"></i></i></li>
-            <li><i class="fas fa-fire"></i></li>
-        </ul>
-        <nav class="busqueda">
-            <input type="search" placeholder="Aqui su busqueda">
-        </nav>
-    </header>
-    <h1 class="titulos">Generos</h1>
-    <div class="backHome">
-        <a href="index.html"><p>Back Home.</p></a>
-    </div>
-        <div class="contenedorPrin">
-                <div class="peliculas">
-                <a href="detail-genre.html"><img src="./elementos/rambo.jpg" alt="Acción"></a>
-                    <a href="detail-genre.html"><p>Acción</p></a>
-            </div>
-            <div class="peliculas">
-                <img src="./elementos/annabelle Comes Home poster design - alternative illustration horror movie.png" alt="junglecruise">
-                <p>Terror.</p>
-            </div>
-            <div class="peliculas">
-                <img src="./elementos/FOTO COMEDIA.jpeg" alt="beckett">
-                <p>Comedia.</p>
-            </div>
-            <div class="peliculas">
-                <img src="./elementos/Rick and Morty wallpaper by ThatIndividual - 02f8 - Free on ZEDGE™.jpeg" alt="withoutremorse">
-                <p>Ciencia Ficción</p>
-            </div>
-            <div class="peliculas">
-                <img src="./elementos/Harry Potter Wallpaper HD para Android - APK Baixar.png" alt="Tomorrowwar">
-                <p>Fantasía</p>
-            </div>
+        <div class="logou">
+            <img class="logo" src="./elementos/watch_me_logo.png">
+            <ul class="redes">
+                <li class="insta"><i class="fab fa-instagram"></i></li>
+                <li class="face"><i class="fab fa-facebook"></i></li>
+                <li class="twt"><i class="fab fa-twitter"></i></li>
+            </ul>
         </div>
-        <!--
-            <img src="nombre" alt="nombre">
-        -->
+        <div class="menu">
+            <nav class="navegador">
+                <ul class="mainMenu">
+                    <h2></h2>
+                    <li><a href="detail-movie.html">Populares</a></li>
+                    <li><a href="detail-valoradas.html">valoradas</li>
+                    <li><a href="fav.html">Favorites</li>
+                    <li><a href="genres.html">Generos</li>
+                    <li><a href="detail-populares.html">Series</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!---MOBILE-REDES-->
+        <div class="redes01">
+            <ul class="redes1">
+            <li><a href="indexx.html"><i class="fas fa-home"></i></i></a></li>
+            <li><a href="fav.html"><i class="fas fa-heart"></i></i></a></li>
+            <li><a href="genres.html"><i class="fas fa-fire"></i></a></li>
+        </ul>
+    </div>
+        
+        <!--SEARCH----------->
+        <div class="busqueda">
+            <form action="./search-results.html" method="get">
+                <input class="search" type="text" name="buscador" value="" minlength="3">
+                <button type="submit" class="search.btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+    
+    <div class="contentGenre">
+        <div class="generos">
+            
+        </div>
+        <div class="generos"></div>
+        <div class="generos"></div>
+        <div class="generos"></div>
+        <div class="generos"></div>
+        <div class="generos"></div>
+        <div class="generos"></div>
+        <div class="generos"></div>
+    </div>
 </body>
 </html>

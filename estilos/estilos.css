@@ -43,7 +43,7 @@ body{
 
 .redes{
     list-style: none;
-    font-size: 25px;
+    font-size: 24px;
     color: rgb(190, 190, 190);
     display: flex;
     flex-direction: column;
@@ -107,9 +107,14 @@ body{
     text-align: center;
     border: 0.5px solid white;
 }
+.busqueda button{
+    background-color: transparent;
+    border: none;
+}
 .fa-search{
     color: white;
 }
+
 
 /*NAV BAR DIF ACCESOS*/
 .menu{
@@ -180,6 +185,7 @@ a:-webkit-any-link {
     background: rgb(126, 171, 255, 0.2);
     border: rgb(187, 187, 187, 0.2) 1px solid;
     border-radius: 5px;
+    height: 370px;
 }
 .peliculas:hover{
     background-color: rgba(101, 201, 235, 0.4);
@@ -192,12 +198,12 @@ a:-webkit-any-link {
     width: 200px;
 }
 .fechaPeli{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
     color: rgb(141, 141, 141);
 }
 .peliculas p{
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
@@ -227,6 +233,7 @@ a:-webkit-any-link {
     align-items: center;
     justify-content: center;
     width: 1100px;
+    height: 370px;
 }
 /*GO UP BTN index*/
 .upbtn{
@@ -246,11 +253,12 @@ a:-webkit-any-link {
     background: rgb(97, 97, 97, 0.3);
     margin-left: 40%;
     margin-top: 5%;
-    border-radius: 15%;
+    border-radius: 5%;
 }
 .integrantes{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
 }
 .participantesDetalle{
     list-style: none;

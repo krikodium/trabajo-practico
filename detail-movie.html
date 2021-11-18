@@ -9,56 +9,74 @@
         <link rel="stylesheet" href="./estilos/estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://kit.fontawesome.com/fe3833e1de.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./estilos/style.css">
     </head>
 
-    <header class="headDetail">
-        <div>
-            <img src="./elementos/watch_me_logo.png" alt="logo">
+    <header class="head">
+        <div class="logou">
+            <img class="logo" src="./elementos/watch_me_logo.png">
+            <ul class="redes">
+                <li class="insta"><i class="fab fa-instagram"></i></li>
+                <li class="face"><i class="fab fa-facebook"></i></li>
+                <li class="twt"><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <nav class="navegador">
+                <ul class="mainMenu">
+                    <h2></h2>
+                    <li><a href="detail-movie.html">Populares</a></li>
+                    <li><a href="detail-valoradas.html">valoradas</li>
+                    <li><a href="index.html">Home</li>
+                    <li><a href="genres.html">Generos</li>
+                    <li><a href="detail-populares.html">Series</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!---MOBILE-REDES-->
+        <div class="redes01">
+            <ul class="redes1">
+            <li><a href="indexx.html"><i class="fas fa-home"></i></i></a></li>
+            <li><a href="fav.html"><i class="fas fa-heart"></i></i></a></li>
+            <li><a href="genres.html"><i class="fas fa-fire"></i></a></li>
+        </ul>
+    </div>
+        
+        <!--SEARCH----------->
+        <div class="busqueda">
+            <form action="./search-results.html" method="get">
+                <input class="search" type="text" name="buscador" value="" minlength="3">
+                <button type="submit" class="search.btn"><i class="fas fa-search"></i></button>
+            </form>
         </div>
     </header>
-
-    <body>
-
-        <div class="backHome">
-            <a href="index.html"><p>Back Home.</p></a>
-        </div>
 
         <article class="detailPeli">
             <div class="Nombre">
                 <h1> DETALLES PELICULAS POPULARES</h1>
             </div>
-            <div class="contenedorPeli">
-                
-                <img src="./elementos/sweetgirl.jfif" alt="sweet girl" height="200px">
-                
-                <ul class="detallepeli">
-                    <li class="tituloname">SWEET GIRL</li>
-                    <li class="sinopsis">2021</li>
-                    <li class="oculto">RATING</li>
-                    <li class="oculto"><i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i></li>
-                    <li>GENERO: Acción</li>
-                    <li >La historia sigue a Cooper, un hombre que ha quedado devastado tras el burtal asesinato de su mujer. Incansablemente, el protagonista tratará por todos los medios de alcanzar su venganza y proteger a la única persona que le importa del mundo: su hija. </li>
-                    <li class="favbot">guardar <i class="far fa-bookmark"></i></li>
-
-                </ul>
+            <div class="contenedorDetail">    
+                <img src="" alt="" class="detailImg">
+                <p class="titleMovie"></p>
+                <p class="datePeli"></p>
+                <p class="sinopsis"></p>
+                <p><a class="fav" href="">Agregar a Favorites</a></p>    
             </div>
             
         </article>
-         <!--SECCION DEL FOOTER-->
-         <footer>
-            <div class="futer">
-                 <div class="integrantes">
-                     <h2>Integrantes</h2>
-                     <p>Mateo krikorian</p>
-                     <p>Juan Pagola</p>
-                     <p>Nicole Sacerdote</p>
-                 </div>
+        <!--SECCION DEL FOOTER-->
+        <footer>
+        <div class="futer">
+                <div class="integrantes">
+                    <h2>Integrantes</h2>
+                    <p>Mateo krikorian</p>
+                    <p>Juan Pagola</p>
+                    <p>Nicole Sacerdote</p>
+                </div>
             </div>
         </footer>
-        
+        <!--SCRIPT-->
+        <script src="./js/detail-movie.js"></script>
     </body>
 </html>

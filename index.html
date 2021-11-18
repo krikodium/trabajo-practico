@@ -34,7 +34,7 @@
                         <li><a href="detail-movie.html">Populares</a></li>
                         <li><a href="detail-valoradas.html">valoradas</li>
                         <li><a href="fav.html">Favorites</li>
-                        <li><a href="detail-genre.html">Generos</li>
+                        <li><a href="genres.html">Generos</li>
                         <li><a href="detail-populares.html">Series</a></li>
                     </ul>
                 </nav>
@@ -51,8 +51,10 @@
             
             <!--SEARCH----------->
             <div class="busqueda">
-                <input type="search" minlength="3" placeholder="Aqui su busqueda..">
-                <i class="fas fa-search"></i>
+                <form action="./search-results.html" method="get">
+                    <input class="search" type="text" name="buscador" value="" minlength="3">
+                    <button type="submit" class="search.btn"><i class="fas fa-search"></i></button>
+                </form>
             </div>
         </header>
 
@@ -85,6 +87,9 @@
                 </div>
             </div>
         </footer>
+        <!--SCRIPT-->
         <script src="./js/index.js"></script>
+        <script src="./js/detail-movie.js"></script>
+        <script src="./js/search-results.js"></script>
     </body>   
 </html>

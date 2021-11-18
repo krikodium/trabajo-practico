@@ -1,0 +1,86 @@
+/*  continuacion de estilos.css.
+Este esta linkeado con detail-movie, 
+*/
+
+/*Detail movie estilos*/
+.contenedorDetail{
+    color: white;
+    text-align: center;
+    font-family: "Popins", sans-serif;
+    background: rgb(126, 171, 255, 0.2);
+    margin-right: 10px;
+    width: 440px;
+    border-radius: 10px;
+}
+.contenedorDetail img{
+    height: 275px;
+    width: 200px;
+    margin: 8px 0 0 0;
+    padding: 10px;
+    border: 2px solid black;
+}
+.contenedorDetail ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+.contenedorDetail ul li{
+    margin: 2%;
+}
+.sinopsis{
+    padding: 20px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px;
+}
+.titleMovie{
+    font-size: 26px;
+}
+
+/*FAVORITES*/
+
+.tusFav{
+    color: blanchedalmond;
+}
+
+.noFav{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 30px;
+}
+
+.favPlaylist{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    margin-right: 2%;
+    font-family: "Popins", sans-serif;
+    background: rgb(126, 171, 255, 0.2);
+    border: rgb(187, 187, 187, 0.2) 1px solid;
+    border-radius: 5px;
+    height: 370px;
+    width: fit-content;
+}
+
+.favPlaylist{
+    flex-direction: row;
+    
+}
+.favPlaylist p {
+    font-size: 15px;
+    padding-top: 5px;
+}
+.favPlaylist:hover{
+    background-color: rgba(101, 201, 235, 0.4);
+    transition: 0.5s ease;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+}
+
+/*FECHA DE PELI Y TITULO DE LA MISMA*/
+.favPlaylist img{
+    height: 275px;
+    width: 200px;
+}
