@@ -355,110 +355,11 @@ a:-webkit-any-link {
 /*RESPONSIVE*/
 @media(max-width: 768px){
     /*TABLET*/
-    .menu .navegador{
-        font-size: 12px;
-        display: flex;
-        flex-direction: row;
-        display: none;
-        text-align: center;
-    }
-    header img{
-        width: 190px;
-        height: 170px;
-        margin: 10px 0 10px 0;
-    }
-    h1 .titulos {
-        font-size: 20px;
-        margin: 5px;
-    }
-    .peliculas{
-        font-size: 5px;
-        height: 270px;
-        width: 155px;
-        margin: 0px 15px 100px 0;
-        background: rgb(126, 171, 255, 0.2);
-        
-    }
-    .peliculas img{
-        height: 150px;
-        width: 100px;
-    }
-    .titulos{
-        margin: 100px;
-    }
-    .futer{
-        margin-top: 200px;
-    }
+    
 }
 
 /*MBILE*/
 @media(max-width: 420px){
     /*INDEX*/
-    .menu {
-        display: none;
-    }
-    .menu{
-        margin-right: 5%;
-    }
-
-    .titulos{
-        font-size: 25px;
-        text-align: center;
-        margin: 60px 0 70px 0;
-    }
-    .head .busqueda{
-        display: none;
-    }
-    .head{
-        margin-left: 10%;
-        width: 80vw;
-    }
-    .head img{
-        height: 100px;
-        width: 120px;
-        padding: 0;
-        margin: 30px;
-    }   
-    .redes{
-        display: none;
-    }
-    .redes1 li{
-        visibility: visible;
-        margin-right: 25px;
-        margin-bottom: 10px;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contenedorPrin{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedorPrin{
-        margin: 0;
-    }
-    .peliculas{
-        width: 200px;
-        height: 300px;
-        margin: 5px 0 10px 0;
-    }
-    .peliculas img{
-        width: 170px;
-        height: 190px;
-        margin-top: 5px;
-    }
     /*DETAIL*/
-    .Nombre{
-        font-size: 17px;
-        text-align: center;
-    }
-    .contenedorPeli   {
-        width: 300px;
-    }
-    .upbtn{
-        margin-right: 15%;
-    }
-    
 }

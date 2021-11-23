@@ -11,8 +11,8 @@ fetch(url_populares)
     })
     .then(function (data) {
         console.log(data)
-        let contenedor = document.querySelector('.contenedorPrin1');
         let pelisPop = data.results;
+        let contenedor = document.querySelector('.contenedorPrin1');
         console.log(pelisPop);
         let peliculasPop = '';
         for (let i = 0; i < 5; i++) {

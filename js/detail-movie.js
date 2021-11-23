@@ -24,28 +24,10 @@ fetch(url)
         titulo.innerHTML = data.title
         fecha.innerHTML = data.release_date
         resumen.innerHTML = data.overview
-
-
-
-
-
     })
     .catch(function (error) {
         console.log(`este es el eror : ${error}`)
     })
-
-
-fetch(url)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data)
-    })
-    .catch(function (error) {
-        console.log('el error fue = ' + error)
-    })
-
 
 let favoritos = [];
 let favStorage = localStorage.getItem('favoritos')

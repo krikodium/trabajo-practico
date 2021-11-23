@@ -1,9 +1,9 @@
 let qs = location.search;
 let qst = new URLSearchParams(qs);
-let qsto = qst.get('buscador');
+let terminoBuscado = qst.get('buscador');
 
 let busquedaUser = document.querySelector('.titulos')
-busquedaUser.innerText = `Los resultados de la busqueda ${qsto}, son:`
+busquedaUser.innerText = `Los resultados de la busqueda ${terminoBuscado}, son:`
 
 //variables de url 
 
@@ -12,7 +12,7 @@ const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 //fetch de res de busqueda. 
 
-let urlSearch = `https://api.themoviedb.org/3/search/movie?api_key=eff71d911bc68b6cdf67ad2d02630320&language=en-US&page=1&include_adult=false&query=${qsto}`;
+let urlSearch = `https://api.themoviedb.org/3/search/movie?api_key=eff71d911bc68b6cdf67ad2d02630320&language=en-US&page=1&include_adult=false&query=${terminoBuscado}`;
 
 fetch(urlSearch)
     .then(function (response) {
@@ -41,7 +41,7 @@ fetch(urlSearch)
 
 //series results
 
-let urlSerie = `https://api.themoviedb.org/3/search/tv?api_key=eff71d911bc68b6cdf67ad2d02630320&language=en-US&page=1&include_adult=false&query=${qsto}`
+let urlSerie = `https://api.themoviedb.org/3/search/tv?api_key=eff71d911bc68b6cdf67ad2d02630320&language=en-US&page=1&include_adult=false&query=${terminoBuscado}`
 
 fetch(urlSerie)
     .then(function (response) {

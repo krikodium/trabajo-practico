@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENERO</title>
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="icon" href="./elementos/MORTYLOGO.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="index.html">
-    <script src="https://kit.fontawesome.com/fe3833e1de.js"  crossorigin="anonymous"></script>
+    <title>
+        WATCHME
+        </title>
+        <!--CAMBIAR ICONO DE TITLE-->
+        <link rel="icon" href="./elementos/MORTYLOGO.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <link rel="stylesheet" href="./estilos/style.css">
+        <script src="https://kit.fontawesome.com/fe3833e1de.js"  crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--tipografia poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
 </head>
-
 <body>
     <header class="head">
         <div class="logou">
@@ -27,10 +31,10 @@
             <nav class="navegador">
                 <ul class="mainMenu">
                     <h2></h2>
-                    <li><a href="detail-movie.html">Populares</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="detail-valoradas.html">valoradas</li>
-                    <li><a href="index.html">HOME</li>
                     <li><a href="fav.html">Favorites</li>
+                    <li><a href="genres.html">Generos</li>
                     <li><a href="detail-populares.html">Series</a></li>
                 </ul>
             </nav>
@@ -48,21 +52,13 @@
         <!--SEARCH----------->
         <div class="busqueda">
             <form action="./search-results.html" method="get">
-                <input class="search" type="text" name="buscador" value="" minlength="3">
+                <input class="search" type="text" name="buscador" value="" minlength="3" placeholder="Aqui tu busqueda">
                 <button type="submit" class="search.btn"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </header>
-    
-    <!--generos de peliculas-->
-    <h1 class="titulos">MOVIE GENRES</h1>
-    <div class="contentGenreM">
-    </div>
-    <!--generos de peliculas-->
-    <h1 class="titulos">SERIES GENRES</h1>
-    <div class="contentGenreS">
-    </div>
-
-    <script src="./js/genre.js"></script>
+    <h1 class="titulos">Peliculas popoulares</h1>
+    <div class="contenedorPop"></div>
+    <script src="./js/populares.js"></script>
 </body>
 </html>
