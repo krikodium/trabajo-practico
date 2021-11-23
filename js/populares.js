@@ -25,5 +25,5 @@ fetch(url)
 
     })
     .catch(function(error){
-        console.log(`El error es ` + error);
+        console.log(`El Error es ` + error);
     })

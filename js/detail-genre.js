@@ -67,5 +67,5 @@ fetch(url)
             contenedor.innerHTML = peliGeneros
         })
         .catch(function(error){
-            console.log(`El error fue =` + error);
+            console.log(`El Error fue =` + error);
         })
