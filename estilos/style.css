@@ -38,49 +38,6 @@ Este esta linkeado con detail-movie,
 
 /*FAVORITES*/
 
-/*series*/
-.tituloSerie{
-    color: blanchedalmond;
-}
-
-.seriesFav{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: white;
-    text-align: center;
-    margin-right: 2%;
-    font-family: "Popins", sans-serif;
-    background: rgb(126, 171, 255, 0.2);
-    border: rgb(187, 187, 187, 0.2) 1px solid;
-    border-radius: 5px;
-    height: 370px;
-    width: fit-content;
-}
-
-.seriesFav{
-    flex-direction: row;
-    margin: 50px 30px 0 50px;
-}
-.seriesFav p {
-    font-size: 15px;
-    padding-top: 5px;
-}
-.seriesFav:hover{
-    background-color: rgba(101, 201, 235, 0.4);
-    transition: 0.5s ease;
-}
-.listaSerie{
-    display: flex;
-    flex-direction: row;
-}
-.seriesFav img{
-    height: 275px;
-    width: 200px;
-}
-/*pelisfav*/
-.titulo{
-    color: blanchedalmond;
-}
 .tusFav{
     color: blanchedalmond;
 }
@@ -107,7 +64,7 @@ Este esta linkeado con detail-movie,
 
 .favPlaylist{
     flex-direction: row;
-    margin: 50px 30px 0 50px;
+    
 }
 .favPlaylist p {
     font-size: 15px;
@@ -126,126 +83,4 @@ Este esta linkeado con detail-movie,
 .favPlaylist img{
     height: 275px;
     width: 200px;
-}
-
-/*GENERO*/
-.contentGenreM{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.contentGenreS{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.generos{
-    color: blanchedalmond;
-    margin: 10px;
-}
-.generosS{
-    color: blanchedalmond;
-    margin: 10px;
-}
-.genereTitle{
-    text-align: center;
-}
-.generos img{
-    width: 300px;
-    height: 300px;
-}
-
-/*SEARCH RESULTS*/
-
-.contentSearch{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: 5% 0 5% 10%;
-}
-.contentSearchSerie{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: 5% 0 5% 10%;
-}
-
-
-.peliRes{
-    margin: 15px;
-    color: blanchedalmond;
-}
-.peliRes p {
-    margin: 10px;
-    margin-top: 15px;
-}
-.peliRes img{
-    width: 220px;
-    height: 270px;
-}
-
-
-.serieRes{
-    margin: 15px;
-    color: blanchedalmond;
-}
-.serieRes p {
-    margin: 10px;
-    margin-top: 15px;
-}
-.serieRes img{
-    width: 220px;
-    height: 270px;
-}
-/*PELICULAS POPULARES*/
-
-.contenedorPop{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: 5% 0 5% 10%;
-}
-
-.peliPopulares{
-    margin: 15px;
-    color: blanchedalmond;
-}
-.peliPopulares img{
-    width: 220px;
-    height: 270px;
-}
-.fechaPeli{
-    color: blanchedalmond;
-    font-size: 12px;
-}
-
-/*Detail genre*/
-.contenedorSeries{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: 5% 0 5% 10%;
-}
-.contenedorDetailGenre{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: 5% 0 5% 10%;
-}
-
-.generoPeli{
-    margin: 15px;
-    color: blanchedalmond;
-}
-.generoPeli img{
-    width: 220px;
-    height: 270px;
-}
-.fechaPeli{
-    color: blanchedalmond;
-    font-size: 12px;
 }

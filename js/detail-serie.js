@@ -24,37 +24,25 @@ fetch(url)
         titulo.innerHTML = data.name
         fecha.innerHTML = data.first_air_date
         resumen.innerHTML = data.overview
+
+
+
+
+
     })
     .catch(function (error) {
         console.log(`este es el eror : ${error}`)
     })
 
-let seriesFavoritas = [];
-let favStorage = localStorage.getItem('seriesFavoritas')
+//declaro un array que iremos completando con datos a lo largo del cod
+let favorites = [];
 
-if (favStorage != null) {
-    seriesFavoritas = JSON.parse(favStorage);
-}
-
-let fav = document.querySelector('.favS');
-
-if (seriesFavoritas.includes(id)) {
-    fav.innerText = "quitar de favoritos";
-}
-
-fav.addEventListener('click', function (evento) {
+//hacer click en el link debemos capturar el elemento.
+let fav = document.querySelector('.Fav');
+fav.addEventListener('click', function () {
     evento.preventDefault();
 
-    if (seriesFavoritas.includes(id)) {
-        let indice = seriesFavoritas.indexOf(id);
-        seriesFavoritas.splice(indice, 1)
-        fav.innerText = "Agregar a favoritos"
-    } else {
-        seriesFavoritas.push(id)
-        fav.innerText = "Quitar de favoritos"
-    }
-
-    let favString = JSON.stringify(seriesFavoritas);
-    localStorage.setItem('seriesFavoritas', favString);
-
+    //agregar al array
+    favorites.push()
+    //guardar el array en el storage
 })
