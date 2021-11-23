@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENERO</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="icon" href="./elementos/MORTYLOGO.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="index.html">
-    <script src="https://kit.fontawesome.com/fe3833e1de.js"  crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header class="head">
         <div class="logou">
-            <img class="logo" src="./elementos/watch_me_logo.png">
+            <img class="logou" src="./elementos/watch_me_logo.png">
             <ul class="redes">
                 <li class="insta"><i class="fab fa-instagram"></i></li>
                 <li class="face"><i class="fab fa-facebook"></i></li>
@@ -28,9 +23,9 @@
                 <ul class="mainMenu">
                     <h2></h2>
                     <li><a href="detail-movie.html">Populares</a></li>
-                    <li><a href="detail-valoradas.html">Valoradas</li>
+                    <li><a href="detail-valoradas.html">valoradas</li>
+                    <li><a href="index.html">Home</li>
                     <li><a href="fav.html">Favorites</li>
-                    <li><a href="genres.html">Generos</li>
                     <li><a href="detail-populares.html">Series</a></li>
                 </ul>
             </nav>
@@ -48,15 +43,18 @@
         <!--SEARCH----------->
         <div class="busqueda">
             <form action="./search-results.html" method="get">
-                <input class="search" type="text" name="buscador" value="" minlength="3">
+                <input class="search" type="text" name="buscador" value="" minlength="3" placeholder="Aqui tu busqueda">
                 <button type="submit" class="search.btn"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </header>
     
-    <h1 class="titleGenre">Generos de peliculas</h1>
-    <div class="contentGenre"></div>
+    <h1 class="titulos"></h1>
+    <div class="contenedorSeries"></div>
 
-    <script src="./js/genre.js"></script>
+
+
+
+    <script src="./js/detail-genre.js"></script>
 </body>
 </html>
