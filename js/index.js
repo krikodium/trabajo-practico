@@ -4,8 +4,8 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 //PELICULAS POPULARES
 
-const url_populares = 'https://api.themoviedb.org/3/movie/popular?api_key=eff71d911bc68b6cdf67ad2d02630320&language=en-US&page=1'
-fetch(url_populares)
+const URL_POPULARES = 'https://api.themoviedb.org/3/movie/popular?api_key=eff71d911bc68b6cdf67ad2d02630320&language=en-US&page=1'
+fetch(URL_POPULARES)
     .then(function (response) {
         return response.json();
     })

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let qs = location.search;
 let qst = new URLSearchParams(qs);
 let terminoBuscado = qst.get('buscador');
@@ -66,5 +65,3 @@ fetch(urlSerie)
     .catch(function (error) {
         console.log('este es el error = ' + error)
     })
-=======
->>>>>>> 63d3129508a4b0f9dfeaacda893e0e8a1729d70d

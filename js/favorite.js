@@ -15,6 +15,8 @@ if (favoritos == null || favoritos.length == 0) {
     contenedor.innerHTML = '<p class="noFav"><a href="genres.html">Que lastima, no tienen ningun favorito. Ve a seleccionarlos</a></p>'
 } else {
     for (let i = 0; i < favoritos.length; i++) {
+        let tituloFav = document.querySelector('.tusFav')
+        tituloFav.innerHTML = '<h1 class="tusFav">Tus peliculas favoritas</h1>';
         buscarYMostrarFavoritos(favoritos[i]);
     }
 }
@@ -30,7 +32,6 @@ function buscarYMostrarFavoritos(id) {
         .then(function (data) {
             console.log(data)
             pelisFav += `
-                <h1 class="tusFav">Tus peliculas favoritas</h1>
                 <div class="favPlaylist">
                 <a href="detail-movie.html?id=${id}"><img src= "${IMG_URL + data.poster_path}" alt="${data.title}"></a>
                 <p>${data.title}</p>
